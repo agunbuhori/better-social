@@ -2,12 +2,16 @@ import FeedScreen from '@/screens/FeedScreen';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {THEME_COLORS} from '@/consts/colors';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarActiveTintColor: THEME_COLORS.Primary,
+      }}>
       <Tab.Screen
         name="Feed"
         component={FeedScreen}
@@ -47,8 +51,9 @@ const BottomTabNavigator = () => {
         name="Profile"
         component={FeedScreen}
         options={{
+          tabBarShowLabel: false,
           tabBarIcon: props => (
-            <Ionicons name="home" color={props.color} size={24} />
+            <Ionicons name="person-outline" color={props.color} size={24} />
           ),
         }}
       />

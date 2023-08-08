@@ -3,6 +3,7 @@ import {FlatList, Pressable, StyleSheet, View} from 'react-native';
 import FeedItem from './components/FeedItem';
 import {FEEDS} from '@/assets/data/feeds';
 import Feather from 'react-native-vector-icons/Feather';
+import {THEME, THEME_COLORS} from '@/consts/colors';
 
 const FeedScreen = () => {
   const [data, setData] = useState(FEEDS);
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 62,
     right: 20,
-    backgroundColor: '#008080',
+    backgroundColor: THEME_COLORS.Primary,
     shadowColor: '#171717',
     shadowOffset: {width: -2, height: 4},
     shadowOpacity: 0.2,

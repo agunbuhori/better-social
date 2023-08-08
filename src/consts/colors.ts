@@ -7,3 +7,7 @@ export const TEXT_COLORS = {
 export const BORDER_COLORS = {
   Default: '#eee',
 };
+
+export const THEME_COLORS = {
+  Primary: '#008080',
+};

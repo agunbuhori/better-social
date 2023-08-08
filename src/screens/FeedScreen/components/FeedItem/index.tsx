@@ -5,6 +5,7 @@ import {FC} from 'react';
 import {Feed} from '@/types/Feed';
 import Content from './Content';
 import Buttons from './Buttons';
+import {FEED, FEED_GAP} from '../../consts/sizes';
 
 const FeedItem: FC<Feed> = ({
   author,
@@ -27,8 +28,8 @@ const FeedItem: FC<Feed> = ({
 const styles = StyleSheet.create({
   feed: {
     backgroundColor: 'white',
-    marginBottom: 16,
-    height: 483,
+    marginBottom: FEED_GAP,
+    height: FEED,
   },
 });
 

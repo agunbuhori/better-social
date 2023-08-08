@@ -5,3 +5,4 @@ export const FEED = 483;
 export const BUTTONS = 52;
 export const DESCRIPTION_TEXT = 16;
 export const DESCRIPTION_TEXT_LINE_HEIHGT = 16;
+export const FEED_GAP = 8;
